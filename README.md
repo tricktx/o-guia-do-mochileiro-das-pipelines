@@ -1,5 +1,10 @@
 # docker-guide
 
+### Referências: 
+1. https://github.com/tricktx/docker-guide
+2. https://github.com/ramoncunha/docker-guide
+3. https://www.docker.com/resources/what-container/
+4. https://docs.docker.com/get-started/docker-overview/
 
 # Cronograma de Estudos para Docker
 
