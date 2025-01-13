@@ -4,7 +4,7 @@
 # Cronograma de Estudos para Docker
 
 ### **Semana 1: Introdução ao Docker**
-- [] Feito 
+- [ ] Feito 
 - **Teoria (1h)**:
     - O que é Docker e sua importância em projetos modernos.
     - Conceitos básicos: imagens, containers, volumes, e redes.
@@ -20,7 +20,7 @@
 ---
 
 ### **Semana 2: Trabalhando com Imagens e Containers**
-- [] Feito
+- [ ] Feito
 - **Teoria (1h)**:
     - Estrutura de uma imagem Docker.
     - Diferença entre imagens e containers.
@@ -40,7 +40,7 @@
 ---
 
 ### **Semana 3: Dockerfile - Criando Imagens Personalizadas**
-- [] Feito
+- [ ] Feito
 - **Teoria (1h)**:
     - O que é um Dockerfile e sua estrutura.
     - Instruções básicas: `FROM`, `RUN`, `COPY`, `CMD`.
@@ -68,7 +68,7 @@
 ---
 
 ### **Semana 4: Docker Compose**
-- [] Feito
+- [ ] Feito
 - **Teoria (1h)**:
     - O que é Docker Compose e suas vantagens.
     - Estrutura de um arquivo `docker-compose.yml`.
@@ -95,7 +95,7 @@
 ---
 
 ### **Semana 5: Volumes e Persistência de Dados**
-- [] Feito
+- [ ] Feito
 - **Teoria (1h)**:
     - O que são volumes e por que usá-los.
     - Criando e montando volumes.
@@ -116,7 +116,7 @@
 ---
 
 ### **Semana 6: Redes e Comunicação entre Containers**
-- [] Feito
+- [ ] Feito
 - **Teoria (1h)**:
     - Redes no Docker: bridge, host e overlay.
     - Comunicação entre containers usando redes.
@@ -129,7 +129,7 @@
 ---
 
 ### **Semana 7: Otimização e Debugging**
-- [] Feito
+- [ ] Feito
 - **Teoria (1h)**:
     - Reduzindo o tamanho de imagens.
     - Analisando logs e debugando containers.
@@ -143,7 +143,7 @@
 ---
 
 ### **Semana 8: Testes, CI/CD e Próximos Passos**
-- [] Feito
+- [ ] Feito
 - **Teoria (1h)**:
     - Automatizando testes com containers.
     - Docker em pipelines CI/CD.
