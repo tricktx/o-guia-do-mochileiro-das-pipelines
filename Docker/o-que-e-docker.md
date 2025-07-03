@@ -1,32 +1,36 @@
-# O que é Docker?
+# 📦 O que é Docker?
+Docker é uma plataforma open source que permite ao desenvolvedor empacotar sua aplicação em ambientes portáteis e isolados, chamados containers. Isso garante que o projeto possa ser executado em qualquer lugar, independentemente do sistema operacional ou configurações da máquina local.
 
-Docker é uma plataforma open source que o desenvolvedor consegue empacotar toda a sua aplicação em ambientes portateis e dessa forma, conseguimos replicar todo o projeto, independente da instalação ou do sistema operacional do seu computador. 
+## ✅ Vantagens
+Isolamento e segurança: o Docker executa a aplicação em um ambiente isolado chamado container, evitando conflitos com o sistema host.
 
+Execução simultânea: é possível executar diversos containers simultaneamente em uma mesma máquina.
 
+Centralização: pacotes, código e ambiente de execução são agrupados em uma única imagem.
 
-#### - As vantagens: 
-1. O Docker consegue empacotar e executar a sua aplicação em um ambiente chamado container, logo, um sinonimo de isolamento e segurança. 
-2. Nesse processo, você consegue executar diversos containeres simultaneamente em um determinada hospedagem
-3. Centralização de pacotes, códigos e ambientes.
-4. Fácil integração em pipelines de CI/CD.
+Integração com CI/CD: o Docker facilita a automação de testes, builds e deploys em pipelines.
 
-#### - Cenário: 
-- Imagine o seguinte cenário: 
-    1.Seus desenvolvedores escrevem código localmente e compartilham seu trabalho com seus colegas usando contêineres do Docker.
-    2. Eles usam o Docker para enviar seus aplicativos para um ambiente de teste e executar testes automatizados e manuais.
-    3. Quando os desenvolvedores encontram bugs, eles podem corrigi-los no ambiente de desenvolvimento e reimplantá-los no ambiente de teste para teste e validação.
-    4. Quando o teste é concluído, levar a correção ao cliente é tão simples quanto enviar a imagem atualizada para o ambiente de produção.
+## 💡 Cenário de uso
+Imagine o seguinte fluxo:
 
----
+Os desenvolvedores escrevem código localmente e compartilham seu trabalho usando containers Docker.
 
-#### - Imagem:
+Eles utilizam Docker para enviar os aplicativos para um ambiente de testes (automatizados e manuais).
 
-- Uma imagem Docker é uma "lista" de instruções para a criação de um Docker Container. Há a possibilidade de uma imagem ser criada a partir de outra imagem, com apenas algumas alterações e definições que se aplicam a a sua aplicação.
-- Para você criar uma imagem Docker, cre um `Dockerfile` na raiz do seu projeto e defina comandos para construção da sua imagem e posteriomente, do seu Container.
-- `Ps: Quando você altera o Dockerfile e há a reconstrução da imagem, apenas as camadas que foram alteradas serão reconstruídas, por esse motivo, ` 
+Quando um bug é encontrado, ele pode ser corrigido localmente e reimplantado para revalidação.
 
+Finalizados os testes, o deploy para produção pode ser feito facilmente, enviando a imagem atualizada ao ambiente produtivo.
 
-#### - Container:
+## 🧱 Imagem
+Uma imagem Docker é um conjunto de instruções para criar um container.
 
-- Um Contêiner é uma instância executável de uma imagem.
-- Há a possibilidade de criar, parar, excluir e outras ações no container através do CLI ou de uma API.
+É possível criar uma imagem a partir de outra imagem base, customizando apenas o necessário para sua aplicação.
+
+Para criar uma imagem Docker, defina um arquivo Dockerfile na raiz do projeto com os comandos necessários.
+
+Obs: Ao modificar o Dockerfile e reconstruir a imagem, apenas as camadas alteradas são recompiladas, otimizando o processo.
+
+## 📦 Container
+Um container é uma instância executável de uma imagem.
+
+É possível criar, iniciar, parar, excluir e inspecionar containers via linha de comando (CLI) ou através da API do Docker.
