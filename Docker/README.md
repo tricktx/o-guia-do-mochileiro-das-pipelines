@@ -8,7 +8,7 @@
 # Cronograma de Estudos para Docker
 
 ### **Semana 1: Introdução ao Docker**
-- [ ] Feito 
+- [x] Feito 
 - **Teoria (1h)**:
     - O que é Docker e sua importância em projetos modernos.
     - Conceitos básicos: imagens, containers, volumes, e redes.

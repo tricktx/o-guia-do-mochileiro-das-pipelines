@@ -1,7 +1,5 @@
-# Primeiros Passos:
----
-
-Iremos utilizar nossos primeiros comandos do Docker após ter instalado.
+## 🚀 Primeiros Passos com Docker
+Esta seção apresenta os comandos básicos para você começar a utilizar o Docker após instalá-lo corretamente em sua máquina.
 
 1. Verifique se o Docker foi instalado corretamente:
 
@@ -9,7 +7,7 @@ Iremos utilizar nossos primeiros comandos do Docker após ter instalado.
 docker --version
 ```
 O output será a versão que o Docker está buildado no seu computador, segue abaixo um exemplo:
-![alt text](image.png)
+![alt text](files/image.png)
 
 2. Crie o seu primeiro container:
 ```
@@ -17,7 +15,7 @@ docker run hello-world
 ```
 
 Dessa forma, iremos criar nosso primeiro container. O Docker irá retornar uma imagem de Boas Vindas e informando algumas instruções interessantes, como que a instalação ocorreu perfeitamente e os caminhos que o Docker fez para a criação do container, segue abaixo um exemplo:
-![alt text](image-1.png)
+![alt text](files/image-1.png)
 
 ---
 
@@ -27,14 +25,14 @@ Para você ter verificar qual containers está sendo virtualizado no momento, ba
 ```
 docker ps
 ```
-![alt text](image-2.png)
+![alt text](files/image-2.png)
 
 No nosso caso, não irá retornar nada, uma vez que o hello-world imprime as mensagens de boas vindas e as instruções. Caso quisermos ver o que foi realmente criado, devemos rodar o comando com a flag `-a`.
 
 ```
 docker ps -a
 ```
-![alt text](image-3.png)
+![alt text](files/image-3.png)
 
 ---
 
@@ -100,7 +98,7 @@ Criar um container do Nginx, acessar pelo navegador e remover o container.
 
     output:
 
-    ![alt text](image-4.png)
+    ![alt text](files/image-4.png)
 
     1.2 - Execute o container baixado
 
@@ -113,12 +111,12 @@ Criar um container do Nginx, acessar pelo navegador e remover o container.
     2. https://cursos.alura.com.br/forum/topico-docker-run-flags-t-i-d-restart-p-263536
     
     output:
-    ![alt text](image-5.png)
+    ![alt text](files/image-5.png)
 
 2. Acesse pelo navegador e garanta que esteja funcionando
 
     Acesse `http://localhost:8080/` no navegador e o resultado será esse: 
-    ![alt text](image-6.png)
+    ![alt text](files/image-6.png)
 
 4. Remova o container
 4.1 - Primeiro, iremos verificar os container que temos através do seguinte comando:
@@ -127,7 +125,7 @@ Criar um container do Nginx, acessar pelo navegador e remover o container.
     docker ps
     ```
     `output:` 
-    ![alt text](image-7.png)
+    ![alt text](files/image-7.png)
 
     4.2 - Dessa forma, precisamos parar o container primeiro
 
@@ -135,7 +133,7 @@ Criar um container do Nginx, acessar pelo navegador e remover o container.
     docker stop 10146132e544
     ```
     `output:`
-    ![alt text](image-9.png)
+    ![alt text](files/image-9.png)
 
     4.3 - Por último, excluir o container
 
@@ -143,4 +141,4 @@ Criar um container do Nginx, acessar pelo navegador e remover o container.
     docker rm eloquent_booth
     ```
     `output:`
-    ![alt text](image-8.png)
+    ![alt text](files/image-8.png)
